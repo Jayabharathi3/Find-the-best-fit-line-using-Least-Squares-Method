@@ -73,7 +73,8 @@ plt.show()
 ```
 
 ## Output:
-![best fit line](sam.png)
+![ml1](https://github.com/Jayabharathi3/Find-the-best-fit-line-using-Least-Squares-Method/assets/120367796/b27107b6-49f2-4683-a40a-5b05b7dd5bdf)
+
 
 
 ## Result:
