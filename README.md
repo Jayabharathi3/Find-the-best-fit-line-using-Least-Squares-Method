@@ -24,22 +24,21 @@ Program to implement univariate Linear Regression to fit a straight line using l
 Developed by: JAYABHARATHI . S
 RegisterNumber:  212222100013
 
-```
-
-```python
 
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Preprocessing Input data
 
-X=np.array(eval(input()))
-Y=np.array(eval(input()))
+X=np.array([0,1,2,3,4,5,6,7,8,9])
+Y=np.array([1,3,2,5,7,8,8,9,10,12])
 
 # Mean
 
 X_mean=np.mean(X)
+print(X_mean)
 Y_mean=np.mean(Y)
+print(Y_mean)
 num=0  #for slope
 denum=0   #for slope
 
@@ -51,11 +50,11 @@ for i in range(len(X)):
 
 # Calculate slope
 m=num/denum
+print(m)
 
 # Calculate intercept
 b=Y_mean - m*X_mean
-
-print(m,b)
+print(b)
 
 # Line equation
 Y_pred=m*X+b
@@ -63,8 +62,8 @@ print(Y_pred)
 
 # To plot graph
 
-plt.scatter(X,Y)
-plt.plot(X,Y_pred,color='red') 
+plt.scatter(X,Y,color='Red')
+plt.plot(X,Y_pred,color='Blue')
 plt.show()
 
 ```
